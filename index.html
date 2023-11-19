@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Echéancier</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="inputs">
+                <div>
+                    <label>Montant</label>
+                    <input type="number" id="montant" min="0" />
+                </div>
+                <div>
+                    <label>Année</label>
+                    <input type="number" id="annee" min="1" />
+                </div>
+                <div>
+                    <label>Taux</label>
+                    <input type="number" id="taux" min="0" />
+                </div>
+            </div>
+            <div id="simulateur">
+                <div id="simulateur-label">
+                    <span>Période</span>
+                    <span>Capital Amorti</span>
+                    <span>Intérets</span>
+                    <span>Capital Restant Dû</span>
+                    <span>Mensualité</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

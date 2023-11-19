@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#inputs > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 400px;
+}
+
+#inputs > div > label {
+    text-align: right;
+    padding-right: 20px;
+}
+
+#simulateur {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(40px, auto);
+}
+
+#simulateur-label,
+.simulateur-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    border: solid;
+    border-width: 1px 0;
+}
+
+#simulateur-label {
+    font-weight: bold;
+}
+
+#simulateur-label:first-child,
+.simulateur-row:first-child {
+    border-top: none;
+}
+
+#simulateur-label:last-child,
+.simulateur-row:last-child {
+    border-bottom: none;
+}
+
+#simulateur-label > span,
+.simulateur-row > span {
+    margin: auto;
+}
